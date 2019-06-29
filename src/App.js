@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios"
 import './App.css';
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
@@ -21,7 +22,16 @@ class App extends React.Component {
       notes: []
     };
   } 
-  
+
+  componentDidMount(){
+    axios.get("/notes.json")
+    .then(response=>{
+      this.setState({notes:response.data})
+    })
+    .catch (e=>console.log(`Unable to fetch data: ${e}`))
+  }
+
+
   updateField = name => e => { //CLOUSURES 
     this.setState({ [name]: e.target.value });
   };
