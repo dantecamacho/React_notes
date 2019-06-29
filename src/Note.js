@@ -2,14 +2,14 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 
 
-const Note =({notes})=>{
+const Note =({note})=>{
     
     return(
         <React.Fragment>
             <Typography align="center" variant="h4" gutterBottom>
-                Title
+                {note.title}
             </Typography>
-            <Typography variant="subtitle1">Desctiption</Typography>
+            <Typography variant="subtitle1">{note.description}</Typography>
         </React.Fragment>
     )
 }

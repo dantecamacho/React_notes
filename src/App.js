@@ -18,12 +18,7 @@ class App extends React.Component {
     this.state = {
       title: "",
       description: "",
-      notes: [
-          {
-              title:"some title",
-              description:"some description"
-          }
-      ]
+      notes: []
     };
   } 
   
