@@ -9,7 +9,7 @@ import {Link} from "react-router-dom"
 
 
 
-const NotesList=({notes})=>{
+const NotesList=({notes, deleteNote})=>{
         return(
             <List>
             {   notes.length ?(
@@ -17,7 +17,7 @@ const NotesList=({notes})=>{
                             <ListItem key={index} button component={Link} to={`/view/${note.id}`}>
                                 <ListItemText primary={note.title} />
                                     <ListItemSecondaryAction>
-                                        <IconButton>
+                                        <IconButton onClick={()=>deleteNote(note.id)}>
                                         <DeleteIcon />
                                         </IconButton>
                                     </ListItemSecondaryAction>
