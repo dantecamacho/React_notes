@@ -6,6 +6,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import {Link} from "react-router-dom"
+import Typography from "@material-ui/core/Typography";
 
 
 
@@ -23,9 +24,9 @@ const NotesList=({notes, deleteNote})=>{
                                     </ListItemSecondaryAction>
                             </ListItem>
               ))):(
-                  <typography align = "center" variant="subtitle1">
+                  <Typography align = "center" variant="subtitle1">
                       No notes yet...
-                  </typography>
+                  </Typography>
               )}
           </List>
         )

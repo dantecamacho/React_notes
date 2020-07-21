@@ -60,14 +60,12 @@ class App extends React.Component {
   };
 
   FilterNote=id=>{
-    return this.state.notes.filter(note=>note.id)(note => note.id === parseInt(id))[0]
+    return this.state.notes.filter(note => note.id === parseInt(id))[0]
   }
 
 
 
-
   render() {      
-      console.log(this.state)
     return ( 
         <React.Fragment>
             <Typography align="center" variant= "h2" gutterBottom>
@@ -90,13 +88,12 @@ class App extends React.Component {
                 />
               )}
             />
-            <Route path='view/:id'
+            <Route path='/view/:id'
             render={props=>{
               const note=this.FilterNote(props.match.params.id)
               return note ? <Note note={note}/>:<Redirect to="/"/>
             }}
-              />
-              
+            />         
             </Grid>
         </Grid>
         <Fab color="primary" component={Link} to="/new">
