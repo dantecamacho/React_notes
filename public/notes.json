@@ -1,17 +1,7 @@
 [
     {
         "id":112233,
-        "title":"Note 1",
-        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
-    },
-    {
-        "id":445566,
-        "title":"Note 2",
-        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-    },
-    {
-        "id":778899,
-        "title":"Note 3",
-        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        "title":"Hi there",
+        "description":"Thanks for using the app : )"
     }
 ]

@@ -71,11 +71,14 @@ class App extends React.Component {
             <Typography align="center" variant= "h2" gutterBottom>
                 My Notes
             </Typography>
-        <Grid container justify="center" spacing={2}>
+        <Grid container justify="center" spacing={1}>
             <Grid item xs={4}>
                 <NotesList notes={this.state.notes} deleteNote={this.deleteNote} />
+                <Fab color="primary" component={Link} to="/new">
+                    <AddIcon/>
+                </Fab>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={6}>
                 <Route exact path="/" component={Home} />
                 <Route
               path="/new"
@@ -96,9 +99,7 @@ class App extends React.Component {
             />         
             </Grid>
         </Grid>
-        <Fab color="primary" component={Link} to="/new">
-            <AddIcon/>
-        </Fab>
+        
       </React.Fragment>
     );
   };

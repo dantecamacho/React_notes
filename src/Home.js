@@ -4,8 +4,8 @@ import Typography from "@material-ui/core/Typography";
 
 const Home =()=>{
     return(
-        <Typography align="center" variant="h3" gutterBottom>
-            Welcome Back!
+        <Typography align="center" variant="h4" gutterBottom>
+            Start adding your notes!
         </Typography>
     )
 }

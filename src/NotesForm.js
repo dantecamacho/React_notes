@@ -21,7 +21,7 @@ const NotesForm=({title,description,updateField, saveNote})=>{
         </Grid>
         <Grid item xs={12}>
           <TextField
-            placeholder="Start taking notes..."
+            placeholder="Note content..."
             margin="normal"
             multiline
             rows="4"
